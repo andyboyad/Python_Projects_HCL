@@ -1,0 +1,13 @@
+<body>
+<h1> Download Page </h1>
+<h2> File: {{name}} </h2>
+{% if size < 1000 %}
+	<h3> Size: {{size}} Bytes </h3>
+{% elif size >= 1000 and size < 1000*1000 %}
+	<h3> Size: {{size2}} KB </h3>
+{% else %}
+	<h3> Size: {{size3}} MB </h3>
+{% endif %}
+<a href="/file/{{ID}}">Download</a>
+<a href="/delete/{{ID}}">Delete</a>
+<body>

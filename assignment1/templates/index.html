@@ -1,0 +1,16 @@
+<script src="https://rawgithub.com/IonicaBizau/jQuery-cross-domain-requests/master/js/jquery.xdomainajax.js">
+</script> 
+<body>
+<h1> Hangman game</h1>
+<form action = "/{{t}}" method="post">
+<input type="text" name="g"><br>
+<input type="submit" value="Submit">
+</form>
+<h1> word: {{word}}</h1>
+<h1> guesses: {{guess}}</h1>
+<h1> guesses left: {{num}}</h1>
+<h1>{{error}}</h1>
+<form action="/" method="get">
+<input type="submit" value="new game">
+</form>
+</body>
